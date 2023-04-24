@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.65);
+  background-color: #24292e;
+  background-image: url(../images/star-bg.svg),
+    linear-gradient(#191c20, #24292e 15%);
+  background-repeat: repeat-x;
+  background-position: center 0, 0 0, 0 0;
+}
+
+.container {
+  width: 75vw;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.container li {
+  width: 15vw;
+  height: 13vw;
+  display: block;
+  list-style: none;
+  margin-top: 2%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+.container li:hover {
+  transform: translate(0, -2px);
+}
+
+.container li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.container li a .block {
+  width: 15vw;
+  height: 7vw;
+  margin-top: 0px;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+}
+
+.container li a p img {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 0px;
+  transition: all 0.3s;
+}
+
+.container li a p img:active {
+  width: 5.6vw;
+  height: 5.6vw;
+  transition: all 0.3s;
+}
+
+.container li a .title {
+  font-family: "微软雅黑";
+  font-size: 1vw;
+  text-align: center;
+  /* margin-top: 1vh; */
+}
+
+.search_container {
+  display: block;
+  height: 37px;
+  width: 42vw;
+  background: #fff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.select-wrapper {
+  width: 30px;
+  height: 37px;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#select_img {
+  display: block;
+  height: 12px;
+  margin: 13px 5px;
+  transition: all 0.3s;
+}
+
+.dialog {
+  float: left;
+  width: 42vw;
+  height: 50px;
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 3px;
+  display: none;
+  transition: all 0.3s;
+}
+
+.dialog .list {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  float: left;
+  color: #333333;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.search_text {
+  display: block;
+  width: 35.5vw;
+  height: 27px;
+  padding: 5px 0;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  position: relative;
+  float: left;
+  caret-color: #000000;
+  display: none;
+}
+
+.default {
+  display: block;
+}
