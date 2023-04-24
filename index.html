@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>我的首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/layout.css" />
+  <link href="./images/icon.png" type="image/x-icon" rel="shortcut icon" />
+</head>
+
+<body>
+  <ul class="container" id="list">
+    <li draggable="true">
+      <a href="https://qiye.aliyun.com/alimail/" target="_blank">
+        <p class="block">
+          <img src="./images/aliyouxiang.png" draggable="false" />
+        </p>
+        <p class="title">阿里邮箱</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="https://devops.aliyun.com/" target="_blank">
+        <p class="block">
+          <img src="./images/yunxiao.jpg" draggable="false" />
+        </p>
+        <p class="title">云效</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="https://docs.qq.com/desktop" target="_blank">
+        <p class="block">
+          <img src="./images/tx.png" draggable="false" />
+        </p>
+        <p class="title">腾讯文档</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="https://lanhuapp.com/web/#/item" target="_blank">
+        <p class="block">
+          <img src="./images/lanhu.png" draggable="false" />
+        </p>
+        <p class="title">蓝湖</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="http://team.noxgroup.com/pages/viewpage.action?pageId=15210334" target="_blank">
+        <p class="block">
+          <img src="./images/nox.png" draggable="false" />
+        </p>
+        <p class="title">NoxTeam</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="http://www.woshipm.com/" target="_blank">
+        <p class="block">
+          <img src="./images/renren.png" draggable="false" />
+        </p>
+        <p class="title">人人都是产品经理</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="https://translate.google.com.hk/?hl=zh-CN&tab=wT" target="_blank">
+        <p class="block">
+          <img src="./images/google.png" draggable="false" />
+        </p>
+        <p class="title">Google 翻译</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="https://www.iconfont.cn/" target="_blank">
+        <p class="block">
+          <img src="./images/iconfont.jpg" draggable="false" />
+        </p>
+        <p class="title">iconfont</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="http://tongji-neiwang.noxgroup.com/" target="_blank">
+        <p class="block">
+          <img src="./images/shence.png" draggable="false" />
+        </p>
+        <p class="title">神策</p>
+      </a>
+    </li>
+    <li draggable="true">
+      <a href="https://github.com/" target="_blank">
+        <p class="block">
+          <img src="./images/github.png" draggable="false" />
+        </p>
+        <p class="title">GitHub</p>
+      </a>
+    </li>
+  </ul>
+  <div id="search_container" class="search_container">
+    <div id="select" class="select-wrapper">
+      <img id="select_img" src="./images/select.png" alt="" />
+    </div>
+    <input type="text" autofocus="autofocus" class="search_text default" id="baidu" placeholder=" 百度" />
+    <input type="text" autofocus="autofocus" class="search_text" id="google" placeholder=" Google" />
+    <input type="text" autofocus="autofocus" class="search_text" id="qihu" placeholder=" 360搜索" />
+    <input type="text" autofocus="autofocus" class="search_text" id="sougou" placeholder=" 搜狗" />
+    <input type="text" autofocus="autofocus" class="search_text" id="bing" placeholder=" 必应" />
+    <input type="text" autofocus="autofocus" class="search_text" id="yahoo" placeholder=" 雅虎" />
+    <input type="text" autofocus="autofocus" class="search_text" id="magi" placeholder=" Magi" />
+
+    <ul id="dialog" class="dialog">
+      <li id="baidu_btn" class="list">百度</li>
+      <li id="google_btn" class="list">Google</li>
+      <li id="qihu_btn" class="list">360搜索</li>
+      <li id="sougou_btn" class="list">搜狗</li>
+      <li id="bing_btn" class="list">必应</li>
+      <li id="yahoo_btn" class="list">雅虎</li>
+      <li id="magi_btn" class="list">Magi</li>
+    </ul>
+  </div>
+
+  <script src="js/search.js"></script>
+  <script src="js/drag.js"></script>
+</body>
+
+</html>
